@@ -1,8 +1,14 @@
-// Now consider both if/else blocks together (keeping the added console.log lines). 
-// Run the code and examine the output. 
+// Now consider both if/else blocks together (keeping the added console.log lines).
+// Run the code and examine the output.
+/*
+WARNING: Insufficient fuel!
+launchReady =  false
+Crew & computer cleared.
+launchReady =  true
+*/
 
-// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
-// Is the program behaving as expected?
+// Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false? false
+// Is the program behaving as expected? no
 
 let launchReady = false;
 let fuelLevel = 17000;
