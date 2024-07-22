@@ -19,3 +19,11 @@ console.log(fox);
 console.log(fox.age, fox.color);
 
 //Try modifying or adding properties below.
+fox.age +=1;
+fox.cutnessLvl = 1000;
+
+console.log(fox.age);
+console.log(fox.cutnessLvl);
+
+let cat = new Astronaut ('Cat', 5, 8);
+console.log(cat);
