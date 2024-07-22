@@ -4,6 +4,11 @@ function gradeLabs(labs) {
     let result = lab.runLab(3);
     console.log(`${lab.student} code worked: ${result === 27}`);
   }
+  try{
+    gradeLabs(studentLabs2);
+  }catch(error){
+    console.log("Error thrown");
+  }
 }
 
 let studentLabs = [
@@ -20,5 +25,27 @@ let studentLabs = [
     }
   }
 ];
+let studentLabs2 = [
+  {
+    student: 'Blake',
+    myCode: function (num) {
+      return Math.pow(num, num);
+    }
+  },
+  {
+    student: 'Jessica',
+    runLab: function (num) {
+      return Math.pow(num, num);
+    }
+  },
+  {
+    student: 'Mya',
+    runLab: function (num) {
+      return num * num;
+    }
+  }
+];
 
 gradeLabs(studentLabs);
+// gradeLabs(studentLabs2);
+
