@@ -4,9 +4,13 @@ body{
 }
 p{
     color:green;
+    background-color: beige;
+    padding: 12px;
 }
 h1{
     font-size: 36px;
+    background-color: aquamarine;
+    margin: 50px;
 }
 .center{
     text-align: center;
@@ -17,3 +21,4 @@ h1{
 #list-color{
     color:blueviolet;
 }
+
