@@ -4,6 +4,9 @@ function init() {
     const paragraph = document.getElementById("statusReport");
 
     // Put your code for the exercises here.
+    paragraph.addEventListener("", event => {
+        paragraph.innerHTML = 'Shuttle is on the ground!'
+    })
     button.addEventListener("click", event => {
         paragraph.innerHTML = 'Houston! We have liftoff!';
     });
@@ -13,9 +16,17 @@ function init() {
     missionAbort.addEventListener("mouseout", event => {
         event.target.style.backgroundColor = ''
     });
-    // missionAbort.addEventListener("click", event => {
-    //     paragraph.innerHTML = 'Are you sure you want to abort the Mission?'
-    // });
+    missionAbort.addEventListener("click", event => {
+        window.confirm('Are you sure you want to abort the Mission?');
+    if (!confirm){
+        
+    }else{
+        paragraph.innerHTML = 'Mission Aborted! Space shittle will return home.'
+
+    }
+    });
+
+   
 
 }
 
